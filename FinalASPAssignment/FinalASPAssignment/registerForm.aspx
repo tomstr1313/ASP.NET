@@ -4,6 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    
     <title>Register Form</title>
 </head>
 <body>
@@ -52,22 +53,7 @@
                     </td>
                     <td>
                         Year:<asp:DropDownList ID="DropDownListYear" runat="server">    
-                            <asp:ListItem Text="1950" />
-                            <asp:ListItem Text="1960" />
-                            <asp:ListItem Text="1970" />
-                            <asp:ListItem Text="1980" />
-                            <asp:ListItem Text="1990" />
-                            <asp:ListItem Text="1991" />
-                            <asp:ListItem Text="1992" />
-                            <asp:ListItem Text="1993" />
-                            <asp:ListItem Text="1994" />
-                            <asp:ListItem Text="1995" />
-                            <asp:ListItem Text="1996" />
-                            <asp:ListItem Text="1997" />
-                            <asp:ListItem Text="1998" />
-                            <asp:ListItem Text="1999" />
-                            <asp:ListItem Text="2000" />
-                            <asp:ListItem Text="2001" />                            
+                                                       
                         </asp:DropDownList>
                         Month:<asp:DropDownList ID="DropDownListMonth" runat="server">
                             <asp:ListItem Text = "January" />

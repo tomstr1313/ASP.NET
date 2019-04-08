@@ -24,6 +24,11 @@ namespace FinalASPAssignment
                 {
                     DropDownListDay.Items.Add(new ListItem(day.ToString()));
                 }
+                for (int year = 1910; year < 2020; year++)
+                {
+                    DropDownListYear.Items.Add(new ListItem(year.ToString()));
+                }
+
             }
         }
 
