@@ -18,7 +18,7 @@
         }
         body{
             
-            background-image:url('../images/healthback.png');
+            background-image:url('../images/healthback.jpg');
             background-repeat:no-repeat;
             background-attachment:fixed;
         }
