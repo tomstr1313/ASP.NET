@@ -17,6 +17,9 @@ namespace FinalASPAssignment
             {
                 //calling the username cookie
                 HttpCookie cookies = Request.Cookies["myCookies"];
+                if(cookies != null){
+                    lblCurrentUser.Text = cookies["username"];
+                }
 
                 //connecting to database for info from user
                 string CS = ConfigurationManager.ConnectionStrings["myDB"].ConnectionString;
@@ -46,16 +49,26 @@ namespace FinalASPAssignment
      //method to load data into a gridview !!****being used for testing purposes****!!
         void loadData()
             {
-                string CS = ConfigurationManager.ConnectionStrings["myDB"].ConnectionString;
+                //string CS = ConfigurationManager.ConnectionStrings["myDB"].ConnectionString;
 
-                using (SqlConnection conn = new SqlConnection(CS))
-                {
-                    SqlCommand cmd = new SqlCommand("SELECT * FROM [dbo].[Register]", conn);
-                    conn.Open();
-                    GridView1.DataSource = cmd.ExecuteReader();
-                    GridView1.DataBind();
-                }
+                //using (SqlConnection conn = new SqlConnection(CS))
+                //{
+                    //SqlCommand cmd = new SqlCommand("SELECT * FROM [dbo].[Register]", conn);
+                    //conn.Open();
+                    //GridView1.DataSource = cmd.ExecuteReader();
+                    //GridView1.DataBind();
+                //}
             }
+        }
+
+        protected void rotationBtn_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("studentRotationPage.aspx");
+        }
+
+        protected void LogOutBtn_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("login.aspx");
         }
     }
 }

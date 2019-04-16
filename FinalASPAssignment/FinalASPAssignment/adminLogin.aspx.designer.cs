@@ -10,16 +10,16 @@
 namespace FinalASPAssignment {
     
     
-    public partial class login {
+    public partial class adminLogin {
         
         /// <summary>
-        /// loginForm control.
+        /// form1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm loginForm;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
         /// username control.
@@ -31,13 +31,13 @@ namespace FinalASPAssignment {
         protected global::System.Web.UI.WebControls.Label username;
         
         /// <summary>
-        /// usernameTxt control.
+        /// txtAdminOnly control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox usernameTxt;
+        protected global::System.Web.UI.WebControls.TextBox txtAdminOnly;
         
         /// <summary>
         /// password control.
@@ -49,13 +49,13 @@ namespace FinalASPAssignment {
         protected global::System.Web.UI.WebControls.Label password;
         
         /// <summary>
-        /// passwordTxt control.
+        /// txtPassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox passwordTxt;
+        protected global::System.Web.UI.WebControls.TextBox txtPassword;
         
         /// <summary>
         /// loginBtn control.
@@ -67,30 +67,12 @@ namespace FinalASPAssignment {
         protected global::System.Web.UI.WebControls.Button loginBtn;
         
         /// <summary>
-        /// registerBtn control.
+        /// backToUserLoginBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button registerBtn;
-        
-        /// <summary>
-        /// forgotPasswordBtn control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button forgotPasswordBtn;
-        
-        /// <summary>
-        /// adminLoginBtn control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button adminLoginBtn;
+        protected global::System.Web.UI.WebControls.Button backToUserLoginBtn;
     }
 }

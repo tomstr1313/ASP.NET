@@ -1,23 +1,35 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="studentLoggedIn.aspx.cs" Inherits="FinalASPAssignment.WebForm1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="editUsersAdmin.aspx.cs" Inherits="FinalASPAssignment.editUsersAdmin" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <style>
+        #logoutBtn{
+border: none;
+  background:none;
+  font-size: 12px;
+  cursor: pointer;
+  display: inline-block;
+  color:black;}
+    </style>
     <title></title>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:Label ID="lblCurrentUser" runat="server"></asp:Label>
-            <table class="studentInfo">
+            <asp:Label ID="currentUserLabel" runat="server"></asp:Label><asp:Button ID="logoutBtn" runat="server" Text="LogOut" OnClick="logoutBtn_Click" />
+
+            <br /><br /><br />
+            Search by Username/Email:<asp:TextBox ID="searchByTxt" runat="server" Text=""></asp:TextBox><asp:Button ID="searchBtn" runat="server" Text="Search"  OnClick="searchBtn_Click"/>
+            <table class="editStudentInfo">
                 <br /><br /><br />
                 <tr>
                     <td>
                         <asp:Label ID="lblFName" runat="server" Text="First Name"></asp:Label>
                     </td>
                     <td>
-                        <asp:Label ID="fName" runat="server"></asp:Label>
+                        <asp:TextBox ID="fName" runat="server"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
@@ -25,7 +37,7 @@
                         <asp:Label ID="lblLName" runat="server" Text="Last Name"></asp:Label>
                     </td>
                     <td>
-                        <asp:Label ID="lName" runat="server"></asp:Label>
+                        <asp:TextBox ID="lName" runat="server"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
@@ -33,7 +45,7 @@
                         <asp:Label ID="lblAddress" runat="server" Text="Address"></asp:Label>
                     </td>
                     <td>
-                        <asp:Label ID="address" runat="server"></asp:Label>
+                        <asp:TextBox ID="address" runat="server"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
@@ -41,7 +53,7 @@
                         <asp:Label ID="lblPostal" runat="server" Text="Postal Code"></asp:Label>
                     </td>
                     <td>
-                        <asp:Label ID="postalCode" runat="server"></asp:Label>
+                        <asp:TextBox ID="postalCode" runat="server"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
@@ -49,7 +61,7 @@
                         <asp:Label ID="lblDOB" runat="server" Text="DOB"></asp:Label>
                     </td>
                     <td>
-                        <asp:Label ID="DOB" runat="server"></asp:Label>
+                        <asp:TextBox ID="DOB" runat="server"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
@@ -57,7 +69,7 @@
                         <asp:Label ID="lblEmail" runat="server" Text="Email"></asp:Label>
                     </td>
                     <td>
-                        <asp:Label ID="email" runat="server"></asp:Label>
+                        <asp:TextBox ID="email" runat="server"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
@@ -65,7 +77,7 @@
                         <asp:Label ID="lblPassword" runat="server" Text="Password/Confirmation Password"></asp:Label>
                     </td>
                     <td>
-                        <asp:Label ID="password" runat="server"></asp:Label>
+                        <asp:TextBox ID="password" runat="server"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
@@ -73,7 +85,7 @@
                         <asp:Label ID="lblTele" runat="server" Text="Telephone"></asp:Label>
                     </td>
                     <td>
-                        <asp:Label ID="telephone" runat="server"></asp:Label>
+                        <asp:TextBox ID="telephone" runat="server"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
@@ -81,7 +93,7 @@
                         <asp:Label ID="lblProgramType" runat="server" Text="Program Type"></asp:Label>
                     </td>
                     <td>
-                        <asp:Label ID="programType" runat="server"></asp:Label>
+                        <asp:TextBox ID="programType" runat="server"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
@@ -89,7 +101,7 @@
                         <asp:Label ID="lblProgramName" runat="server" Text="Program Name"></asp:Label>
                     </td>
                     <td>
-                        <asp:Label ID="programName" runat="server"></asp:Label>
+                        <asp:TextBox ID="programName" runat="server"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
@@ -97,13 +109,24 @@
                         <asp:Label ID="lblInstitution" runat="server" Text="Institution Name"></asp:Label>
                     </td>
                     <td>
-                        <asp:Label ID="institutionName" runat="server"></asp:Label>
+                        <asp:TextBox ID="institutionName" runat="server"></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:Label ID="lblGender" runat="server" Text="Gender"></asp:Label>
+                    </td>
+                    <td>
+                        <asp:TextBox ID="gender" runat="server"></asp:TextBox>
                     </td>
                 </tr>
             </table>
-            <asp:GridView ID="GridView1" runat="server"></asp:GridView>
-
-            <asp:Button ID="rotationBtn" runat="server" Text="ADD/VIEW ROTATIONS" OnClick="rotationBtn_Click" /><asp:Button ID="LogOutBtn" runat="server" Text="LOGOUT" OnClick="LogOutBtn_Click" />
+            <br /><br />
+            <asp:Button ID="editBtn" runat="server" Text="Edit"  OnClick="editBtn_Click"/><asp:Button ID="deleteBtn" runat="server" Text="Delete" OnClick="deleteBtn_Click" /><asp:Button ID="addBtn" runat="server" Text="Add" OnClick="addBtn_Click" />
+            <br /><br /><br />
+            <asp:GridView ID="GridViewUsers" runat="server"></asp:GridView>
+            <br /><br />
+            <asp:Button ID="backBtn" runat="server" Text="Admin Main Page" OnClick="backBtn_Click" />
         </div>
     </form>
 </body>

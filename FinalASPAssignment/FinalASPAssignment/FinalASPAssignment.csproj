@@ -67,13 +67,39 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="adminLogin.aspx" />
+    <Content Include="editRotationsAdmin.aspx" />
+    <Content Include="editUsersAdmin.aspx" />
     <Content Include="forgotPassword.aspx" />
     <Content Include="login.aspx" />
     <Content Include="registerForm.aspx" />
+    <Content Include="studentRotationPage.aspx" />
     <Content Include="Web.config" />
     <Content Include="studentLoggedIn.aspx" />
+    <Content Include="adminPage.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="adminLogin.aspx.cs">
+      <DependentUpon>adminLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminLogin.aspx.designer.cs">
+      <DependentUpon>adminLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="editRotationsAdmin.aspx.cs">
+      <DependentUpon>editRotationsAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="editRotationsAdmin.aspx.designer.cs">
+      <DependentUpon>editRotationsAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="editUsersAdmin.aspx.cs">
+      <DependentUpon>editUsersAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="editUsersAdmin.aspx.designer.cs">
+      <DependentUpon>editUsersAdmin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="forgotPassword.aspx.cs">
       <DependentUpon>forgotPassword.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -102,6 +128,20 @@
     </Compile>
     <Compile Include="studentLoggedIn.aspx.designer.cs">
       <DependentUpon>studentLoggedIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminPage.aspx.cs">
+      <DependentUpon>adminPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminPage.aspx.designer.cs">
+      <DependentUpon>adminPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="studentRotationPage.aspx.cs">
+      <DependentUpon>studentRotationPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="studentRotationPage.aspx.designer.cs">
+      <DependentUpon>studentRotationPage.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

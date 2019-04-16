@@ -10,7 +10,7 @@
 namespace FinalASPAssignment {
     
     
-    public partial class WebForm1 {
+    public partial class editUsersAdmin {
         
         /// <summary>
         /// form1 control.
@@ -22,13 +22,40 @@ namespace FinalASPAssignment {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// lblCurrentUser control.
+        /// currentUserLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCurrentUser;
+        protected global::System.Web.UI.WebControls.Label currentUserLabel;
+        
+        /// <summary>
+        /// logoutBtn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button logoutBtn;
+        
+        /// <summary>
+        /// searchByTxt control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox searchByTxt;
+        
+        /// <summary>
+        /// searchBtn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button searchBtn;
         
         /// <summary>
         /// lblFName control.
@@ -46,7 +73,7 @@ namespace FinalASPAssignment {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label fName;
+        protected global::System.Web.UI.WebControls.TextBox fName;
         
         /// <summary>
         /// lblLName control.
@@ -64,7 +91,7 @@ namespace FinalASPAssignment {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lName;
+        protected global::System.Web.UI.WebControls.TextBox lName;
         
         /// <summary>
         /// lblAddress control.
@@ -82,7 +109,7 @@ namespace FinalASPAssignment {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label address;
+        protected global::System.Web.UI.WebControls.TextBox address;
         
         /// <summary>
         /// lblPostal control.
@@ -100,7 +127,7 @@ namespace FinalASPAssignment {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label postalCode;
+        protected global::System.Web.UI.WebControls.TextBox postalCode;
         
         /// <summary>
         /// lblDOB control.
@@ -118,7 +145,7 @@ namespace FinalASPAssignment {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label DOB;
+        protected global::System.Web.UI.WebControls.TextBox DOB;
         
         /// <summary>
         /// lblEmail control.
@@ -136,7 +163,7 @@ namespace FinalASPAssignment {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label email;
+        protected global::System.Web.UI.WebControls.TextBox email;
         
         /// <summary>
         /// lblPassword control.
@@ -154,7 +181,7 @@ namespace FinalASPAssignment {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label password;
+        protected global::System.Web.UI.WebControls.TextBox password;
         
         /// <summary>
         /// lblTele control.
@@ -172,7 +199,7 @@ namespace FinalASPAssignment {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label telephone;
+        protected global::System.Web.UI.WebControls.TextBox telephone;
         
         /// <summary>
         /// lblProgramType control.
@@ -190,7 +217,7 @@ namespace FinalASPAssignment {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label programType;
+        protected global::System.Web.UI.WebControls.TextBox programType;
         
         /// <summary>
         /// lblProgramName control.
@@ -208,7 +235,7 @@ namespace FinalASPAssignment {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label programName;
+        protected global::System.Web.UI.WebControls.TextBox programName;
         
         /// <summary>
         /// lblInstitution control.
@@ -226,33 +253,69 @@ namespace FinalASPAssignment {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label institutionName;
+        protected global::System.Web.UI.WebControls.TextBox institutionName;
         
         /// <summary>
-        /// GridView1 control.
+        /// lblGender control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.WebControls.Label lblGender;
         
         /// <summary>
-        /// rotationBtn control.
+        /// gender control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button rotationBtn;
+        protected global::System.Web.UI.WebControls.TextBox gender;
         
         /// <summary>
-        /// LogOutBtn control.
+        /// editBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button LogOutBtn;
+        protected global::System.Web.UI.WebControls.Button editBtn;
+        
+        /// <summary>
+        /// deleteBtn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button deleteBtn;
+        
+        /// <summary>
+        /// addBtn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button addBtn;
+        
+        /// <summary>
+        /// GridViewUsers control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView GridViewUsers;
+        
+        /// <summary>
+        /// backBtn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button backBtn;
     }
 }

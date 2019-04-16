@@ -78,20 +78,20 @@ namespace FinalASPAssignment
         {
             String programName = DropDownListProgramName.Text.ToString();
 
-            if(programName == "Allergy" || programName == "Anaesthesiology" || programName == "Biochemistry" || programName == "Diagnostic radiology" || programName == "Emergency Medicine (FM)"
+            if (programName == "Allergy" || programName == "Anaesthesiology" || programName == "Biochemistry" || programName == "Diagnostic radiology" || programName == "Emergency Medicine (FM)"
                 || programName == "Emergency Medicine (FRCP)" || programName == "Endocrinology" || programName == "Family Medicine" || programName == "Gynaecology")
             {
                 ProgramType = "Postgraduate";
             }
-            else if(programName == "Core rotation" || programName == "Elective" || programName == "Selective")
+            if (programName == "Core rotation" || programName == "Elective" || programName == "Selective")
             {
                 ProgramType = "Undergraduate";
             }
-            else if(programName == "RPN" || programName == "RN" || programName == "MN" || programName == "NP")
+            if (programName == "RPN" || programName == "RN" || programName == "MN" || programName == "NP")
             {
                 ProgramType = "Nursing";
             }
-            else if (programName == "Anaesthesia Assistant" || programName == "Audiology" || programName == "Cardiovascular Technology (ECG)" || programName == "Chiropody" || programName == "Dietetics"
+            if (programName == "Anaesthesia Assistant" || programName == "Audiology" || programName == "Cardiovascular Technology (ECG)" || programName == "Chiropody" || programName == "Dietetics"
                 || programName == "Diet Technician" || programName == "Echocardiography" || programName == "Infection Prevention And Control" || programName == "Other")
             {
                 ProgramType = "Health Professional";
