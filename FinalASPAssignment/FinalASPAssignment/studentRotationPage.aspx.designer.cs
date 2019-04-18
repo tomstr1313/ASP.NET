@@ -10,87 +10,87 @@
 namespace FinalASPAssignment {
     
     
-    public partial class login {
+    public partial class studentRotationPage {
         
         /// <summary>
-        /// loginForm control.
+        /// form1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm loginForm;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// username control.
+        /// currentUser control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label username;
+        protected global::System.Web.UI.WebControls.Label currentUser;
         
         /// <summary>
-        /// usernameTxt control.
+        /// Calendar1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox usernameTxt;
+        protected global::System.Web.UI.WebControls.Calendar Calendar1;
         
         /// <summary>
-        /// password control.
+        /// Calendar2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label password;
+        protected global::System.Web.UI.WebControls.Calendar Calendar2;
         
         /// <summary>
-        /// passwordTxt control.
+        /// DropDownListArea control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox passwordTxt;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownListArea;
         
         /// <summary>
-        /// loginBtn control.
+        /// DropDownListTimeSpent control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button loginBtn;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownListTimeSpent;
         
         /// <summary>
-        /// registerBtn control.
+        /// saveRotation control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button registerBtn;
+        protected global::System.Web.UI.WebControls.Button saveRotation;
         
         /// <summary>
-        /// forgotPasswordBtn control.
+        /// GridViewRotations control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button forgotPasswordBtn;
+        protected global::System.Web.UI.WebControls.GridView GridViewRotations;
         
         /// <summary>
-        /// adminLoginBtn control.
+        /// Button1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button adminLoginBtn;
+        protected global::System.Web.UI.WebControls.Button Button1;
     }
 }

@@ -58,6 +58,14 @@
   color:white;
 }
 
+#adminLoginBtn{
+border: none;
+  background:none;
+  font-size: 12px;
+  cursor: pointer;
+  display: inline-block;
+  color:white;}
+
 .labels{
     color:white;
     padding-right:20px;
@@ -82,10 +90,10 @@
                     
             <asp:TextBox ID="passwordTxt" runat="server"></asp:TextBox>
                     <br /><br />
-            <asp:Button class="button" ID="loginBtn" runat="server" Text="Login"/>
+            <asp:Button class="button" ID="loginBtn" runat="server" Text="Login" OnClick="loginBtn_Click"/>
             <asp:Button class="button" ID="registerBtn" runat="server" Text="Register" OnClick="registerBtn_Click" />
             <br /><br />
-            <asp:Button ID="forgotPasswordBtn" runat="server" Text="Forgot Password" OnClick="forgotPasswordBtn_Click" />
+            <asp:Button ID="forgotPasswordBtn" runat="server" Text="Forgot Password?" OnClick="forgotPasswordBtn_Click" /><asp:Button ID="adminLoginBtn" runat="server" Text="Admin?" OnClick="adminLoginBtn_Click" />
                        
         </div>
     </form>
