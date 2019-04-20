@@ -97,5 +97,10 @@ namespace FinalASPAssignment
                 ProgramType = "Health Professional";
             }
         }
+
+        protected void cancelBtn_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("login.aspx");
+        }
     }
 }

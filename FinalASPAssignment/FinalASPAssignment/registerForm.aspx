@@ -11,6 +11,7 @@
             width: 50%;
             padding: 10px;
             
+            
         }
         h1{
             font-family:Arial;
@@ -27,12 +28,46 @@
             width:35px;
             text-align:center;
         }
+        .postalCode{
+            width:35px;
+            text-align:center;
+        }
         .labels{
     color:black;
-    text-shadow:1px 1px white;
+    
     padding-right:20px;
     font-family:Calibri;
 }
+        .textBoxes{
+            width:170px;
+        }
+        .buttons{
+            background-color: blue;
+  border: none;
+  color: white;
+  
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  width:100px;
+  text-align:center;
+        }
+        .buttons{
+background-color: white; 
+  color: black; 
+  border: 2px solid blue;
+  border-radius:12px;
+}
+
+.buttons:hover {
+  background-color: blue;
+  color: white;
+        }
     </style>
     <title>Register Form</title>
 </head>
@@ -46,7 +81,7 @@
                         <asp:Label class="labels" ID="fNameLbl" runat="server" Text="First Name:"></asp:Label>
                     </td>
                     <td>
-                        <asp:TextBox ID="firstNameTxt" runat="server"></asp:TextBox>
+                        <asp:TextBox class="textBoxes" ID="firstNameTxt" runat="server"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
@@ -54,7 +89,7 @@
                         <asp:Label class="labels" ID="lNameLbl" runat="server" Text="Last Name:"></asp:Label>
                     </td>
                     <td>
-                        <asp:TextBox ID="lastNameTxt" runat="server"></asp:TextBox>
+                        <asp:TextBox class="textBoxes" ID="lastNameTxt" runat="server"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
@@ -62,7 +97,7 @@
                         <asp:Label class="labels" ID="prefNameLbl" runat="server" Text="Preferred First Name:"></asp:Label>
                     </td>
                     <td>
-                        <asp:TextBox ID="prefNameTxt" runat="server"></asp:TextBox>
+                        <asp:TextBox class="textBoxes" ID="prefNameTxt" runat="server"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
@@ -82,10 +117,10 @@
                         <asp:Label class="labels" ID="LblDOB" runat="server" Text="Date of Birth:"></asp:Label>
                     </td>
                     <td>
-                        Year:<asp:DropDownList ID="DropDownListYear" runat="server">    
+                        Year:<asp:DropDownList class="labels" ID="DropDownListYear" runat="server">    
                                                        
                         </asp:DropDownList>
-                        Month:<asp:DropDownList ID="DropDownListMonth" runat="server">
+                        Month:<asp:DropDownList class="labels" ID="DropDownListMonth" runat="server">
                             <asp:ListItem Text = "January" />
                             <asp:ListItem Text = "February" />
                             <asp:ListItem Text = "March" />
@@ -99,7 +134,7 @@
                             <asp:ListItem Text = "November" />
                             <asp:ListItem Text = "December" />
                         </asp:DropDownList>
-                        Day:<asp:DropDownList ID="DropDownListDay" runat="server">  
+                        Day:<asp:DropDownList class="labels" ID="DropDownListDay" runat="server">  
                             
                         </asp:DropDownList>
                     </td>
@@ -139,7 +174,7 @@
                         <asp:Label class="labels" ID="localAddressLine1Lbl" runat="server" Text="Local Address Line 1:"></asp:Label>
                     </td>
                     <td>
-                        <asp:TextBox ID="localAddressLine1Txt" runat="server"></asp:TextBox>
+                        <asp:TextBox class="textBoxes" ID="localAddressLine1Txt" runat="server"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
@@ -147,7 +182,7 @@
                         <asp:Label class="labels" ID="localAddressLine2Lbl" runat="server" Text="Local Address Line 2:"></asp:Label>
                     </td>
                     <td>
-                        <asp:TextBox ID="localAddressLine2Txt" runat="server"></asp:TextBox>
+                        <asp:TextBox class="textBoxes" ID="localAddressLine2Txt" runat="server"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
@@ -155,7 +190,7 @@
                         <asp:Label class="labels" ID="cityLbl" runat="server" Text="City:"></asp:Label>
                     </td>
                     <td>
-                        <asp:TextBox ID="cityTxt" runat="server"></asp:TextBox>
+                        <asp:TextBox class="textBoxes" ID="cityTxt" runat="server"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
@@ -163,7 +198,7 @@
                         <asp:Label class="labels" ID="postalCodeLbl" runat="server" Text="Postal Code:"></asp:Label>
                     </td>
                     <td>
-                         (<asp:TextBox ID="postalCodeTxt1" runat="server"></asp:TextBox>) - <asp:TextBox ID="postalCodeTxt2" runat="server"></asp:TextBox>
+                         <asp:TextBox class="postalCode" ID="postalCodeTxt1" runat="server" MaxLength="3"></asp:TextBox>  <asp:TextBox class="postalCode" ID="postalCodeTxt2" runat="server" MaxLength="3"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
@@ -179,7 +214,7 @@
                         <asp:Label class="labels" ID="LblEmail" runat="server" Text="Email:"></asp:Label>
                     </td>
                     <td>
-                        <asp:TextBox ID="emailTxt" runat="server"></asp:TextBox>
+                        <asp:TextBox class="textBoxes" ID="emailTxt" runat="server"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
@@ -187,7 +222,7 @@
                         <asp:Label class="labels" ID="LblConfirmEmail" runat="server" Text="Confirm Email:"></asp:Label>
                     </td>
                     <td>
-                        <asp:TextBox class="labels" ID="confirmEmailTxt" runat="server"></asp:TextBox>
+                        <asp:TextBox class="textBoxes" ID="confirmEmailTxt" runat="server" ></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
@@ -195,7 +230,7 @@
                         <asp:Label class="labels" ID="passwordLbl" runat="server" Text="Password:"></asp:Label>
                     </td>
                     <td>
-                        <asp:TextBox ID="passwordTxt" runat="server"></asp:TextBox>
+                        <asp:TextBox class="textBoxes" ID="passwordTxt" runat="server"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
@@ -203,7 +238,7 @@
                         <asp:Label class="labels" ID="confirmPasswordLbl" runat="server" Text="Confirm Password:"></asp:Label>
                     </td>
                     <td>
-                        <asp:TextBox ID="confirmPasswordTxt" runat="server"></asp:TextBox>
+                        <asp:TextBox class="textBoxes" ID="confirmPasswordTxt" runat="server"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
@@ -211,7 +246,7 @@
                         <asp:Label class="labels" ID="LblPermanentAddress1" runat="server" Text="Permanent Address"></asp:Label>
                     </td>
                     <td>
-                        <asp:RadioButton ID="RbPermanentAddress" Text="Check, if same as above" runat="server" />
+                        <asp:RadioButton class="labels" ID="RbPermanentAddress" Text="Check, if same as above" runat="server" />
                     </td>
                 </tr>
                 <tr>
@@ -224,7 +259,7 @@
                         <asp:Label class="labels" ID="programNameLbl" runat="server" Text="Program Name:"></asp:Label>
                     </td>
                     <td>
-                        <asp:DropDownList ID="DropDownListProgramName" runat="server">
+                        <asp:DropDownList ID="DropDownListProgramName" runat="server" Width="300px">
                             <asp:ListItem Text="Allergy" />
                             <asp:ListItem Text="Anaesthesiology" />
                             <asp:ListItem Text="Biochemistry" />
@@ -258,7 +293,7 @@
                         <asp:Label class="labels" ID="institutionNameLbl" runat="server" Text="Institution Name:"></asp:Label>
                     </td>
                     <td>
-                        <asp:DropDownList ID="DropDownListInstitutionName" runat="server">
+                        <asp:DropDownList ID="DropDownListInstitutionName" runat="server" Width="300px">
                             <asp:ListItem Text="University of Toronto" />
                             <asp:ListItem Text="Algonquin" />
                             <asp:ListItem Text="Athabasca University" />
@@ -294,7 +329,8 @@
                     </td>
                 </tr>
             </table>
-            <asp:Button ID="registerBtn" runat="server" Text="Register" OnClick="registerBtn_Click" /><asp:Button ID="cancelBtn" runat="server" Text="Cancel" />
+            <asp:Button class="buttons" ID="registerBtn" runat="server" Text="Register" OnClick="registerBtn_Click" />
+            <asp:Button class="buttons" ID="cancelBtn" runat="server" Text="Cancel" OnClick="cancelBtn_Click" />
             <br /><br />
             <asp:Label class="labels" ID="registerComplete" runat="server" Text="Registration was successful!!!" Visible="false"></asp:Label>
         </div>

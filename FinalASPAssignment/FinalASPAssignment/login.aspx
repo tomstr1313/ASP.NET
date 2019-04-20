@@ -5,10 +5,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <style>
+
         #loginForm{
             text-align:center;
             justify-content:center;
             align-items:center;
+        }
+        .loginForm{
+            display:inline-block;
+            align-content:center;
         }
         h1{
             font-family:Arial;
@@ -64,7 +69,9 @@ border: none;
   font-size: 12px;
   cursor: pointer;
   display: inline-block;
-  color:white;}
+  color:white;
+
+}
 
 .labels{
     color:white;
@@ -78,23 +85,35 @@ border: none;
 </head>
 <body>
     <form id="loginForm" runat="server">
-        <div">
+        <div>
             <h1>Health Care Login</h1>
                 
-                
+                <table class="loginForm">
+                    <tr>
+                        <td>
                     <asp:Label class="labels" ID="username" runat="server" Text="Username"></asp:Label>
-               
+               </td>
+                        <td>
             <asp:TextBox ID="usernameTxt" runat="server"></asp:TextBox>
-                   <br /><br />
+                            </td>
+                   </tr>
+                    <tr>
+                        <td>
             <asp:Label class="labels" ID="password" runat="server" Text="Password"></asp:Label>
-                    
+                    </td>
+                        <td>
             <asp:TextBox ID="passwordTxt" runat="server"></asp:TextBox>
+                            </td>
+                        </tr>
+                    </table>
                     <br /><br />
+                    
             <asp:Button class="button" ID="loginBtn" runat="server" Text="Login" OnClick="loginBtn_Click"/>
             <asp:Button class="button" ID="registerBtn" runat="server" Text="Register" OnClick="registerBtn_Click" />
             <br /><br />
-            <asp:Button ID="forgotPasswordBtn" runat="server" Text="Forgot Password?" OnClick="forgotPasswordBtn_Click" /><asp:Button ID="adminLoginBtn" runat="server" Text="Admin?" OnClick="adminLoginBtn_Click" />
-                       
+            <asp:Button ID="forgotPasswordBtn" runat="server" Text="Forgot Password?" OnClick="forgotPasswordBtn_Click" />
+            <asp:Button ID="adminLoginBtn" runat="server" Text="Admin Login" OnClick="adminLoginBtn_Click" />
+                      
         </div>
     </form>
 </body>
