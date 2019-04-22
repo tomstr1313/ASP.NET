@@ -31,6 +31,15 @@ namespace FinalASPAssignment {
         protected global::System.Web.UI.WebControls.Label currentUser;
         
         /// <summary>
+        /// start control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label start;
+        
+        /// <summary>
         /// Calendar1 control.
         /// </summary>
         /// <remarks>
@@ -38,6 +47,15 @@ namespace FinalASPAssignment {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Calendar Calendar1;
+        
+        /// <summary>
+        /// lblFName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblFName;
         
         /// <summary>
         /// Calendar2 control.

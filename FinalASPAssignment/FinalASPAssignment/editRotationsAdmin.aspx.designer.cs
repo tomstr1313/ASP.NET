@@ -13,13 +13,13 @@ namespace FinalASPAssignment {
     public partial class editRotationsAdmin {
         
         /// <summary>
-        /// form1 control.
+        /// adminRotations control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.HtmlControls.HtmlForm adminRotations;
         
         /// <summary>
         /// currentUserLabel control.
@@ -31,13 +31,13 @@ namespace FinalASPAssignment {
         protected global::System.Web.UI.WebControls.Label currentUserLabel;
         
         /// <summary>
-        /// logoutBtn control.
+        /// search control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button logoutBtn;
+        protected global::System.Web.UI.WebControls.Label search;
         
         /// <summary>
         /// searchByTxt control.
@@ -191,5 +191,14 @@ namespace FinalASPAssignment {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button backBtn;
+        
+        /// <summary>
+        /// logoutBtn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button logoutBtn;
     }
 }

@@ -17,7 +17,7 @@ namespace FinalASPAssignment
                 HttpCookie cookies = Request.Cookies["myCookies"];
                 if (cookies != null)
                 {
-                    currentUserLbl.Text = cookies["username"];
+                    //currentUserLbl.Text = cookies["username"];
                 }
             }
         }

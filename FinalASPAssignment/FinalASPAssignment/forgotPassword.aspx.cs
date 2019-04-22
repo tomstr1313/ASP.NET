@@ -26,7 +26,7 @@ namespace FinalASPAssignment
             string CS = ConfigurationManager.ConnectionStrings["myDB"].ConnectionString;
             using(SqlConnection conn = new SqlConnection(CS))
             {
-                SqlCommand cmd = new SqlCommand("SELECT username, password FROM [dbo].[Table] WHERE email = '" + txtEmail.Text.ToString() + "'", conn);
+                SqlCommand cmd = new SqlCommand("SELECT username, password FROM [dbo].[Register] WHERE email = '" + txtEmail.Text.ToString() + "'", conn);
                 conn.Open();
                 SqlDataReader sdr = cmd.ExecuteReader();
                 if (sdr.Read())
@@ -58,6 +58,11 @@ namespace FinalASPAssignment
                 lblMessage.Text = "Username and Password have been sent Successfully!!!";
                 lblMessage.ForeColor = Color.Green;
             }
+        }
+
+        protected void btnBack_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("login.aspx");
         }
     }
 }     
